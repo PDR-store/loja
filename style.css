@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e9e9e9;
+    scroll-behavior: smooth;
+
+}
+
+main{
+    width: 100%;
+}
+.cntrBanner{
+    max-height: calc(100vh - 70px);
+    display: flex;
+    overflow: scroll;
+    position: relative;
+}
+.cntrBanner::-webkit-scrollbar {
+    display: none;
+}
+
+.imgDiv{
+    display: inline-block;
+    min-width: 550px;
+    width: 550px;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(129, 129, 129);
+    margin: 10px 20px;
+}
+
+
+.cntrCategorias{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.cntrCategorias h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px;
+}
+.cntrBoxCateg{
+    display: flex;
+    width: 100%;
+    padding: 0px 50px;
+    padding-bottom: 50px;
+
+}
+.boxCateg{
+    width: 16.66%;
+    padding: 0px 12px 12px 12px;
+    margin: 0px 10px;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boxCateg:hover{
+    background-color: #c4c4c4;
+}
+.boxCateg img{
+    width: 100%;
+    border-radius: 10px;
+}
+.boxCateg p{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.categQuadro{
+    cursor: no-drop;
+}
+.categChaveiro{
+    cursor: no-drop;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .imgDiv {
+        min-width: 500px;
+        width: 500px;
+        height: 500px;
+        margin: 10px 10px;
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .boxCateg p{
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1222px) {
+    .boxCateg p{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .cntrBoxCateg {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .boxCateg {
+        width: 30%;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    .imgDiv {
+        min-width: 400px;
+        width: 400px;
+        height: 400px;
+        margin: 10px 10px;
+    }
+    .cntrCategorias h2{
+        font-size: 24px;
+    }
+    .boxCateg p{
+        padding: 10px;
+        font-size: 16px;
+    }
+    main {
+        padding-top: 70px;
+    }
+
+}
+@media only screen and (max-width: 750px) {
+    .boxCateg {
+        width: 46%;
+    }
+    .cntrBoxCateg {
+        padding: 0px 20px;
+        padding-bottom: 50px;
+    }
+}
