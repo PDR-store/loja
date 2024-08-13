@@ -88,48 +88,80 @@ footer{
 
 
 
-.cntrMensagem{
+.cntrMensagem,
+.cntrMensagemAlternativo{
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.cntrMensagem img{
-    width: 150px;
-    height: 150px;
-    margin-bottom: -20px;
+.cntrMensagem img,
+.cntrMensagemAlternativo img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: -30px;
     z-index: 1;
 }
-.cntrMensagem > div{
+.cntrMensagem > div,
+.cntrMensagemAlternativo > div{
     background-color: white;
-    padding: 14px;
+    padding: 20px;
     border-radius: 10px;
     margin: 0px 30px 30px 0px;
     padding-top: 30px;
+    position: relative;
 }
-.cntrMensagem div >  p{
-    font-size: 16px;
+.cntrMensagem div >  p,
+.cntrMensagemAlternativo div >  p{
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 26px;
 }
-.cntrMensagem button{
+.appSpeeBTN{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     border-radius: 50px;
     border: none;
-    padding: 4px;
+    padding: 6px;
     background-color: #dc442b;
     color: white;
     cursor: pointer;
 }
-.cntrMensagem button svg{
+.appSpeeBTN svg{
     width: 20px;
     height: 30px;
 }
-.cntrMensagem button p{
+.appSpeeBTN p{
     font-size: 16px;
     margin-right: 10px;
+}
+.fechar{
+    background: none;
+    z-index: 1;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+    width: 300px;
+}
+.cntrMensagemAlternativo{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #c1bdd4;
+    z-index: 2;
+}
+.cntrMensagemAlternativo > div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px;
+    padding-top: 50px;
+    position: relative;
 }
