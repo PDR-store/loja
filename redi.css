@@ -18,59 +18,118 @@ html{
 body{
     width: 100%;
     height: 100%;
+    background-color: #d7d3ef;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+
+    width: fit-content;
+    height: fit-content;
 }
-img{
-    max-width: 100%;
-    height: 100vh;
-    margin: auto;
-    position: absolute;
-    z-index: -1;
-    display: none;
+main svg{
+    width: 40px;
+    height: 40px;
+    margin: 40px 0px;
 }
-main{
-    max-width: 800px;
-    padding: 10px;
+main svg *{
+    fill: black;
 }
 h1{
     font-family: 'OldLondon', Arial, Helvetica, sans-serif;
-    font-size: 80px;
     font-weight: normal;
     text-align: center;
-    margin: 50px 0px;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
-p{
-    margin: 16px 0px;
-    line-height: 24px;
+main p{
     font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 26px;
 }
-@media only screen and (max-width: 1010px) {
-    h1{
-        font-size: 80px;
-        margin: 80px 0px;
-    } 
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: end;
 }
-@media only screen and (max-width: 920px) {
-    h1{
-        font-size: 70px;
-        margin: 70px 0px;
-    }
-    p{
-        margin: 16px 40px;
-        line-height: 24px;
-        font-size: 18px;
-    }
-    main{
-        width: 100%;
-        padding: 0px;
-    }
+.cntrBntNotfi svg{
+    width: 70px;
+    height: 70px;
+    margin: 0px 30px 30px 0px;
+    padding: 10px;
+    cursor: pointer;
 }
-@media only screen and (max-width: 720px) {
-    h1{
-        font-size: 70px;
-        margin: 50px 0px;
-    }
+.cntrBntNotfi{
+    display: inline-block;
+    position: relative;
+}
+.notification-badge {
+    position: absolute;
+    top: 4px;
+    right: 34px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+
+.cntrMensagem{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cntrMensagem img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: -20px;
+    z-index: 1;
+}
+.cntrMensagem > div{
+    background-color: white;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 0px 30px 30px 0px;
+    padding-top: 30px;
+}
+.cntrMensagem div >  p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 26px;
+}
+.cntrMensagem button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px;
+    background-color: #dc442b;
+    color: white;
+    cursor: pointer;
+}
+.cntrMensagem button svg{
+    width: 20px;
+    height: 30px;
+}
+.cntrMensagem button p{
+    font-size: 16px;
+    margin-right: 10px;
 }
