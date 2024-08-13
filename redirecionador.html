@@ -83,18 +83,16 @@
     });
 
     document.querySelector('.appSpeeBTN').addEventListener('click', function() {
-        if (isMobile()) {
-            window.location.href = "shopee://home";
-        } else {
+        var shopeeUrl = "shopee://";
+        window.location.href = shopeeUrl;
+
+        // Redireciona para a versão web da Shopee se o app não abrir
+        setTimeout(function() {
             window.open("https://shopee.com.br/user/purchase/", "_blank");
-        }
+
+        }, 2000); // Espera 2 segundos antes de redirecionar para a web
+
     });
-
-    function isMobile() {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        return /android|iPhone|iPad|iPod/i.test(userAgent);
-    }
-
 
 
 </script>
