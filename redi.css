@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'OldLondon';
+    src: url('fonts/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #e2e0ee;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.raio{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.raio img{
+   opacity: .1;
+   max-height: calc(100vh - 20px);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+
+    width: fit-content;
+    height: fit-content;
+}
+main svg{
+    width: 40px;
+    height: 40px;
+    margin: 40px 0px;
+}
+main svg *{
+    fill: black;
+}
+h1{
+    font-family: 'OldLondon', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+main p{
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 26px;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: end;
+}
+.cntrBntNotfi svg{
+    width: 70px;
+    height: 70px;
+    margin: 0px 30px 30px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cntrBntNotfi{
+    display: inline-block;
+    position: relative;
+}
+.notification-badge {
+    position: absolute;
+    top: 4px;
+    right: 34px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+
+.cntrMensagem,
+.cntrMensagemAlternativo{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cntrMensagem img,
+.cntrMensagemAlternativo img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: -40px;
+    z-index: 1;
+    margin-right: -20px;
+}
+.cntrMensagem > div,
+.cntrMensagemAlternativo > div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 30px 30px 0px;
+    padding-top: 30px;
+    position: relative;
+}
+.cntrMensagem div >  p,
+.cntrMensagemAlternativo div >  p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.appSpeeBTN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 6px;
+    background-color: #dc442b;
+    color: white;
+    cursor: pointer;
+}
+.appSpeeBTN svg{
+    width: 20px;
+    height: 30px;
+}
+.appSpeeBTN p{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.fechar{
+    background: none;
+    z-index: 1;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+    width: 300px;
+}
+.cntrMensagemAlternativo{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #c1bdd4;
+    box-shadow: 0px 0px 0px 500px #c1bdd4;
+    z-index: 2;
+    transform: scale(.8);
+}
+.cntrMensagemAlternativo > div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px;
+    padding-top: 50px;
+    position: relative;
+}
