@@ -27,21 +27,16 @@ body{
     align-items: start;
     justify-content: center;
 }
-body::before{
-    content: "";
+.raio{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(imgs/raio.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: scroll;
+    top: 0px;
     z-index: -1;
-    opacity: .1;
 }
+.raio img{
+   opacity: .1;
+   max-height: calc(100vh - 20px);
+}
+
 main{
     display: flex;
     flex-direction: column;
