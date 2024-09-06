@@ -115,6 +115,7 @@ main p{
 }
 .linkWpp{
     color: rgb(100, 17, 177);
+    z-index: 1;
 }
 footer{
     width: 100%;
