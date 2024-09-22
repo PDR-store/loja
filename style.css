@@ -34,10 +34,11 @@ header p{
 header button{
     padding: 10px;
     cursor: pointer;
+    display: none;
 }
 main{
     position: relative;
-    
+    overflow-x: hidden;
 }
 .raio2{
     position: absolute;
@@ -70,7 +71,7 @@ main{
 }
 .cntrL div p{
     margin: 20px 0px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .cntrL div h1{
     font-size: 80px;
@@ -85,6 +86,18 @@ main{
     margin-top: 10px;
     border: none;
     outline: none;
+}
+.cntrConteudo button{
+    padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.cntrConteudo button svg{
+
+    width: 20px;
+    height: 20px;
 }
 button{
     cursor: pointer;
@@ -246,6 +259,7 @@ button{
 
     .cntrBox {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .boxPost {
         width: 46%;
@@ -254,9 +268,60 @@ button{
 @media (max-width: 620px) {
     .cntrL div {
         margin-top: 0px;
-        margin-left: 50px;
     }
     .boxPost {
         max-width: calc(46% - 10px);
     }
+    .cntrConteudo h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 500px) {
+    header p {
+        font-size: 30px;
+    }
+    .cntrL div h1 {
+        font-size: 40px;
+    }
+    .cntrL div button {
+        font-size: 16px;
+        width: 150px;
+        height: 30px;
+    }
+    .cntrL {
+        justify-content: flex-start;
+    }
+    .cntrL div {
+        margin-left: 50PX;
+    }
+    .boxPost p {
+        font-size: 30px;
+    }
+}
+@media (max-width: 450px) {
+
+    .boxPost p {
+        font-size: 20px;
+    }
+    .cntrConteudo {
+        padding: 30px 20px;
+    }
+    .cntrConteudo h2 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 350px) {
+    .cntrL div h1 {
+        font-size: 38px;
+    }
+    .cntrL div p {
+        margin: 20px 0px;
+        font-size: 12px;
+    }
+    .cntrConteudo h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) {
+
 }
